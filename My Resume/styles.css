@@ -1,0 +1,192 @@
+/* 💜 Reset เบื้องต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 💜 พื้นหลังหลักและขนาด A4 */
+body {
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #333;
+}
+
+.A4 {
+  width: 210mm;
+  min-height: 297mm;
+  background: #ffffff;
+  margin: 20px auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* 💜 ตารางหลัก */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  vertical-align: top;
+  text-align: left;
+  padding: 10px;
+}
+
+.c1 {
+  width: 40%;
+  background: #f6f2fb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.c2 {
+  width: 60%;
+  padding: 20px;
+}
+
+/* 💜 รูปโปรไฟล์ */
+.profile img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 4px solid #6a0dad;
+}
+
+/* 💜 ชื่อและลิงก์ */
+.name {
+  text-align: center;
+}
+
+.name h1 {
+  color: #6a0dad;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.name a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+.name a:hover {
+  text-decoration: underline;
+}
+
+/* 💜 ส่วนหัวแต่ละหัวข้อ */
+h2 {
+  color: #6a0dad;
+  border-bottom: 2px solid #6a0dad;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+h3 {
+  color: #4b0082;
+  margin-bottom: 5px;
+}
+
+/* 💜 รายการข้อความ */
+.info, p {
+  display: block;
+  margin-top: 6px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: "• ";
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+/* 💜 Responsive สำหรับจอเล็ก */
+@media (max-width: 900px) {
+  .A4 {
+    width: 95%;
+    padding: 15px;
+  }
+
+  table, tr, th {
+    display: block;
+    width: 100%;
+  }
+
+  .c1, .c2 {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px;
+  }
+
+  .profile img {
+    width: 60%;
+  }
+
+  .name h1 {
+    font-size: 1.4em;
+  }
+
+  p, .info, ul li {
+    font-size: 15px;
+  }
+}
+
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+nav {
+  background: #f7dada;
+}
+
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+
+nav ul.menu li.items {
+  padding: 15px;
+}
+
+nav ul li.items{
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  list-style: none;
+
+}
+
+a {
+  color: #552a7e;
+  text-decoration: none;
+}
